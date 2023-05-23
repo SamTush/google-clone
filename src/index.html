@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../dist/output.css">
     <script src="https://kit.fontawesome.com/2a42914cf9.js" crossorigin="anonymous"></script>
 </head>
-<body class="flex flex-col justify-between min-h-screen">
-    <nav class="flex justify-end h-15 align-middle">
-      <ul class="flex gap-6 h-12">
+<body class="flex flex-col justify-between min-h-screen text-words-midnight font-roboto">
+    <nav class="flex justify-end pt-2 pr-5 h-15 align-middle text-xs font-semibold">
+      <ul class="flex gap-6 h-12 items-center">
         <li>
             <a href="#">Gmail</a>
         </li>
@@ -19,31 +19,41 @@
         </li>
         <li>
             <a href="#">
-                <img class=" w-6 " src="https://cdn3.iconfinder.com/data/icons/fluent-solid-24px-vol-4/24/ic_fluent_grid_dots_24_filled-512.png" alt="">
+                <img class=" w-5 " src="https://cdn3.iconfinder.com/data/icons/fluent-solid-24px-vol-4/24/ic_fluent_grid_dots_24_filled-512.png" alt="">
             </a>
         </li>
         <li>
-            <a href="#"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
+            <div class="flex justify-center items-center bg-user-green w-8 h-8 rounded-full">
+                <a href="#"><i class="fa-solid fa-user" style="color: #fff;"></i></a>
+            </div>
         </li>
       </ul>
     </nav>
 
-    <section class="w-full">
-        <div class="w-full flex flex-col justify-center">
-            <img class=" w-72" src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" alt="">
-            <div class="flex w-96 rounded-full border-solid border-2">
-                <i class="fa-solid fa-magnifying-glass" style="color: #8a8a8a;"></i>
-                <input type="search" placeholder="Search" name="search" id="" >
-                <img class="w-9" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-256.png" alt="">
-                <img class="w-9" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-06-256.png" alt="">
+    <section class="w-full flex justify-center ml-auto mr-auto text-sm">
+        <div class="w-full">
+            <div class="flex justify-center">
+                <img class=" w-72" src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" alt="">
             </div>
-            <div class=" gap-8">
-                <button class=" bg-slate-200">Google Search</button>
-                <button class=" bg-slate-200">I'm Feeling Lucky</button>
+            <div class="flex justify-center">
+                <div class="flex justify-between w-6/12 rounded-full border-solid border-2 border-outline pl-4 pr-4 h-12 items-center">
+                    <div class="flex align-bottom ">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #8a8a8a;"></i>
+                    </div>
+                    <input class="flex w-10/12 h-full outline-none " type="search" name="search" id="" >
+                    <div class="flex align-middle">
+                        <img class="w-9 h-9" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-256.png" alt="">
+                        <img class="w-9 h-9" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-06-256.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="flex">
-                <h6>Google offered in:</h6>
-                <ul class="flex">
+            <div class="flex justify-center p-9 gap-3">
+                <button class="flex align-middle px-7 pt-2 pb-2 bg-google-gray hover:border-solid hover:border-2 hover:border-outline">Google Search</button>
+                <button class="flex align-middle px-7 pt-2 pb-2 bg-google-gray hover:border-solid hover:border-2 hover:border-outline">I'm Feeling Lucky</button>
+            </div>
+            <div class="flex justify-center">
+                <h6 class="mr-2">Google offered in:</h6>
+                <ul class="flex text-words-purple gap-4 font-sans">
                     <li>Luganda</li>
                     <li>Kiswahili</li>
                     <li>Ikinyarwanda</li>
@@ -54,9 +64,9 @@
         </div>
     </section>
 
-    <footer class="bg-gray-400">
+    <footer class="bg-google-gray text-sm">
         <h4 class="pt-3 pb-3 pl-7">Uganda</h4>
-        <hr>
+        <hr class=" border-outline">
         <div class="flex justify-between pt-4 pb-4 pl-7 pr-7">
             <ul class="flex gap-9">
                 <li>About</li>
