@@ -1,2 +1,2 @@
 # google-clone
-In this project, I clone the google search page
+In this project, I clone the google search page using tailwindCSS
